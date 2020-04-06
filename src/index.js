@@ -25,11 +25,7 @@ class App extends React.Component {
 
     // React says we have to define render
     render() {
-        return (
-            <div className="border red">
-                {this.renderContent()}
-            </div>
-        )
+        return <div className="border red">{this.renderContent()}</div>
     }
 }
 ReactDOM.render(<App />, document.querySelector('#root'));
